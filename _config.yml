@@ -14,7 +14,7 @@ mainquote: Technology is a word that describes something that doesn’t work yet
 harmony:
   name: Darius Blog
   # Little description about your site
-  description:
+  description: Darius Blog
   meta_description: Darius Bakunas personal blog.
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
