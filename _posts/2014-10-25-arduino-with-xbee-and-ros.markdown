@@ -94,7 +94,7 @@ ZigBee networks always have a single-coordinator radio. It is responsible for fo
 
 	**DL (Destination Address Low)** - The second part of this address
 
-	* These are destination addresses, which means that you need to use a serial number for the XBee Router module, not the one we are configuring at the moment.
+	These are destination addresses, which means that you need to use a serial number for the XBee Router module, not the one we are configuring at the moment.
 
     When you set these addresses, make sure to click the "Write radio settings" button.
 
