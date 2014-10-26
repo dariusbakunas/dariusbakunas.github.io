@@ -6,6 +6,16 @@ $color-black: #000;
 $color-1: $color-white;
 $color-2: #515151;
 
+// Our variables
+$base-font-family: 'Ubuntu Mono', sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
 // Color schemes for themes based on https://github.com/chriskempson/base16
 $base-00: #2b2b2b;
 $base-01: #272935;

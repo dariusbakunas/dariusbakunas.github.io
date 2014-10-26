@@ -1,15 +1,15 @@
 ---
 ---
 
-// Import reset 
 @import "reset.css";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "variables",
-        "mixins",
-        "layout",
-        "syntax"
+  "variables",
+  "base",
+  "mixins",
+  "layout",
+  "syntax"
 ;
 
 /* -------------------------------- 
@@ -25,13 +25,6 @@ html * {
 
 *, *:after, *:before {
   @include box-sizing(border-box);
-}
-
-body {
-  font: {
-    size: 100%;
-    family: $primary-font; // variables inside partials > _variables.scss
-  }
 }
 
 .wc-container {
@@ -360,26 +353,6 @@ div.page-content {
 }    
 
 div.page-content {
-  ul {       
-    padding: 0 0 1em 0;
-    li {
-      @include font-size(14px);
-      color: $color-2; 
-      line-height: 1.6;
-      background: url(./images/bullet.svg);
-      background-repeat: no-repeat;
-      background-position: 0 6px;
-      padding: 0 0 5px 15px;
-      margin-left: 0;
-    }
-    @include MQ(M){        
-      li {         
-        @include font-size(16px);  
-        line-height: 1.5;
-        background-position: 0 7px; 
-      }
-    }
-  }
   ol { 
     @include font-size(12px);
     // padding-top: 1em;
@@ -519,40 +492,6 @@ blockquote p:last-child {
   blockquote {
     padding-right: 5em;
     padding-left: 1.25em;
-  }
-}
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-.highlight {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  pre {
-    margin-bottom: 0;
   }
 }
 
