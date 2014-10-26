@@ -4,17 +4,13 @@
 // Import reset 
 @import "reset.css";
 
-// Import syntax 
-@import "syntax.css";
-
-// Import colors, fonts etc...
-@import "partials/variables";
-
-// Import custom mixins
-@import "partials/mixins";
-
-// Import layout mixin
-@import "partials/layout";
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "variables",
+        "mixins",
+        "layout",
+        "syntax"
+;
 
 /* -------------------------------- 
 
@@ -526,43 +522,30 @@ blockquote p:last-child {
   }
 }
 
-/* --------------------------------
-
-Code snippets
-
---------------------------------- */
-code, pre {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
 }
-code {  
-  padding: .25em .5em;
-  font-size: 85%;
-  color: $base-08;
-  background-color: rgba($base-08, .1);
+
+code {
+    padding: 1px 5px;
 }
+
 pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1em;
-  padding: 1em;
-  @include font-size(12px);
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: $color-white;
-  border: 1px solid $base-05;
-  code {
-    padding: 0;
-    font-size: 100%;
-    color: inherit;
-    background-color: transparent;
-  }
+    padding: 8px 12px;
+    overflow-x: scroll;
 
-  @include MQ(M) {
-    @include font-size(14px);
-  }
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 .highlight {
