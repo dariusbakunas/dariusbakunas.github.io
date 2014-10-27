@@ -1,11 +1,12 @@
 ---
 layout: post
+comments: true
 title:  "Arduino with XBee and ROS"
 date:   2014-10-25 16:39:00
 categories:
 - blog
 permalink: arduino-with-xbee-and-ros
-description: Small DIY project to show how to use ROS and XBee modules to control arduino devices
+description: Small DIY project to show how to use ROS and XBee modules to control arduino device
 ---
 
 Background
