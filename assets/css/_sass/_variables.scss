@@ -1,16 +1,9 @@
 // General colors
-
 $color-white: #FFF;
 $color-black: #000;
 
 $color-1: $color-white;
 $color-2: #515151;
-
-// Our variables
-$base-font-family: 'Ubuntu Mono', sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -40,5 +33,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 $spacing-unit:     30px;
 
-// Fonts 
-$primary-font: 'Ubuntu Mono', sans-serif;
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+$primary-font: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$code-font: 'Ubuntu Mono', sans-serif;

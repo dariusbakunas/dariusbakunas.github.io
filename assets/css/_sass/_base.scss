@@ -10,8 +10,9 @@ dl, dd, ol, ul, figure {
 
 body {
   font: {
+    family: $primary-font;
+    weight:300;
     size: 100%;
-    family: $primary-font; // variables inside partials > _variables.scss
   }
 }
 
