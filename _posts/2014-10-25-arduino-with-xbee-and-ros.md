@@ -9,9 +9,6 @@ permalink: arduino-with-xbee-and-ros
 description: Small DIY project to show how to use ROS and XBee modules to control arduino device
 ---
 
-Background
-----------
-
 Not so long ago, I was trying to figure out how to communicate with my Arduino Bot using XBee Series 2 radios (API mode) and Robot Operating System (ROS). It took me a while to make the XBee module work in API mode and I'm still learning the ins and outs of the ROS. So this is probably not the most optimal solution, but I bet it is a good starting point. 
 
 Here is a picture of my bot:
