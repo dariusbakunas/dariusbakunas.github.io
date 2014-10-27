@@ -306,7 +306,7 @@ $ rqt_graph
 
 ![rqt_graph][7]
 
-As you can see, there are two nodes - '/teleop_twist_keyboard' and '/cmd_vel_listener_XXX_XXXX'. The first one is the one that interacts with your keyboard.The second one sends commands over the ZigBee network. Both communicate over /cmd_vel topic, which means instead of teleop_twist_keyboard, you could use anything else, as long as it can publish to the same topic.
+As you can see, there are two nodes - '/teleop_twist_keyboard' and '/cmd_vel_listener_XXX_XXXX'. The first one is the one that interacts with your keyboard. The second one sends commands over the ZigBee network. Both communicate over /cmd_vel topic, which means instead of teleop_twist_keyboard, you could use anything else, as long as it can publish to the same topic.
 
 So there it is, a complete Arduino - XBee - ROS example.
 
