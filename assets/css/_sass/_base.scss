@@ -10,6 +10,7 @@ body {
 * Lists
 */
 ul, ol {
+	line-height: 1.6;
 	list-style: square;
 	margin-left: $spacing-unit;
 }
