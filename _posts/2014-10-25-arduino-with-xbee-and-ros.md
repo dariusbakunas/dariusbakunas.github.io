@@ -32,6 +32,9 @@ These are just to show you what I used for my project. It could be much simpler,
 * 1x <a href="http://www.amazon.com/PowerGen®-5200mAh-External-Battery-Capacity/dp/B005VBNYDS" target="_blank">PowerGen® 5200mAh battery pack</a> to power arduino bot.
 * 1x Computer (PC, Mac) to run <a href="http://www.ros.org" target="_blank">ROS</a>.
 * (Optional) <a href="https://www.sparkfun.com/products/10897" target="_blank">Jumper wires</a> very helpful in projects like this.
+* You might need these accessories:
+    - <a href="https://www.sparkfun.com/products/10007" target="_blank">Arduino Stackable Header Kit</a>
+    - <a href="https://www.sparkfun.com/products/8084" target="_blank">Screw Terminals 3.5mm Pitch (2-Pin)</a>
 
 ### Software
 
