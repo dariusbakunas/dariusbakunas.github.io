@@ -4,12 +4,12 @@ comments: true
 title:  "Arduino with XBee and ROS"
 date:   2014-10-25 16:39:00
 categories:
-- blog
+- diy
 permalink: arduino-with-xbee-and-ros
 description: Small DIY project to show how to use ROS and XBee modules to control arduino device
 ---
 
-Not so long ago, I was trying to figure out how to communicate with my Arduino Bot using XBee Series 2 radios (API mode) and Robot Operating System (ROS). It took me a while to make the XBee module work in API mode and I'm still learning the ins and outs of the ROS. So this is probably not the most optimal solution, but I bet it is a good starting point. 
+Not so long ago, I was trying to figure out how to communicate with my Arduino Bot using XBee Series 2 radios (API mode) and Robot Operating System (ROS). It took me a while to make the XBee module work in API mode and I'm still learning the ins and outs of the ROS. So this is probably not the most optimal solution, but I bet it is a good starting point.
 
 Here is a picture of my bot:
 ![Arduino Bot][0]
@@ -119,7 +119,7 @@ $ git clone https://github.com/dariusbakunas/ArduinoBot.git
 {% endhighlight %}
 
 You will also need the XBee library for your Arduino board:
-    
+
 {% highlight bash %}
 $ cd ~/Documents/Arduino/libraries/
 $ git clone https://code.google.com/p/xbee-arduino/
@@ -131,7 +131,7 @@ Now, launch Arduino IDE (relaunch if it was already open). Open the "File" menu.
 
 At the top of the sketch, you will notice these lines:
 
-{% highlight C %}    
+{% highlight C %}
 //ardumoto shield
 int PWM_A = 3;
 int PWM_B = 11;
@@ -140,11 +140,11 @@ int DIR_B = 13;
 {% endhighlight %}
 
 These are standard pin settings for the Arduino DC motor shield. You should see the markings with the numbers on the shield itself (double check just in case). Now, click the "Verify" button in Arduino IDE and make sure the sketch compiles without any problems:
-    
+
 ![Successfull sketch compilation][4]
 
 Now, connect your Arduino board using a USB port.
-    
+
 If you have an XBee shield already attached to the Arduino board, you need to make sure that the UART switch is set to the DLINE position (it is located on the XBee shield). Otherwise, you won't be able to upload the sketch.
 
 Go back to the Arduino IDE and select your Arduino board under the tools menu (*in my case, it was tty.usbmodem1411, it could be different*):
@@ -240,7 +240,7 @@ $ crw-rw---- 1 root dialout 188, 0 Oct 25 12:42 /dev/ttyUSB0
 
 As you can see, the only group able to write to this device is *dialout*. We need to add a current user to this group:
 
-{% highlight bash %}    
+{% highlight bash %}
 $ sudo adduser $USER dialout
 {% endhighlight %}
 
