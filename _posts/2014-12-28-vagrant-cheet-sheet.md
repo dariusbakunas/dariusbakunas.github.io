@@ -3,6 +3,7 @@ layout: post
 comments: true
 title:  "Vagrant Cheet Sheet"
 date:   2014-12-28 16:12:00
+tags: [cheet sheets, vagrant, it]
 categories:
 - cheet sheets
 - vagrant
