@@ -20,9 +20,9 @@ I'm currently using Xen 4.1.4 (with xl toolstack) on Debian Wheezy 64bit.
 
 * Install vde2 package:
 
-	{% highlight bash %}  
-	% sudo apt-get install vde2
-	{% endhighlight %}
+{% highlight bash %}
+% sudo apt-get install vde2
+{% endhighlight %}
 
 
 * Edit /etc/network/interfaces to add virtual bridge adapter:
