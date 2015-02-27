@@ -46,6 +46,7 @@ iface xenbr1 inet static
 
 {% highlight bash %}
 iface xenbr1 inet manual
+	bridge_ports tap0
 {% endhighlight %}
 
 * Restart networking:
